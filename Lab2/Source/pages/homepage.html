@@ -1,0 +1,69 @@
+<div>
+  <div class="card" style="margin-top: 20px;">
+  <div class="card-block" >
+    <div style="margin: 50px 300px;text-align:center;">
+        <h5>Knowledge Transfer Search</h5>
+        <form class="navbar-form" role="search">
+        <div class="input-group add-on">
+          <input class="form-control" placeholder="Enter value to search" ng-model="Name" type="text">
+          <div class="input-group-btn">
+            <button class="btn btn-default" ng-click="KGSearch(Name)"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div ng-repeat="data in kgraphRecords" style="margin:0 auto;">
+        <span ng-if="data.result.image.contentUrl">
+          <div class="card" style="width: 250px;margin-left:10px;">
+            <img class="card-img-top" style="height:300px;width: 250px;" src={{data.result.image.contentUrl}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{data.result.name}}</h5>
+              <p class="card-text">{{data.result.description}}</p>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="card" style="margin-top: 20px;">
+  <div class="card-block">
+  <div style="margin: 50px 300px;text-align:center;">
+      <h5>Ingredient Search</h5>
+    <form class="navbar-form" role="search">
+      <div class="input-group add-on">
+        <input class="form-control" placeholder="Enter Ingredient name to search" ng-model="ingrName" type="text">
+        <div class="input-group-btn">
+          <button class="btn btn-default" ng-click="ingrSearch(ingrName)"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div ng-show='viewContent'>
+    <div class="table-responsive" style="width:400px;margin:0 auto;">
+      <table class="table table-bordered" >
+        <thead>
+          <tr>
+            <th>Ingredient Name</th>
+            <th>Calories</th>
+            <th>Total Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ itemName }}</td>
+            <td>{{ ingrData.calories }}</td>
+            <td>{{ ingrData.totalWeight }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" ng-click="playNutritionDetails()">Play nutrition details</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
