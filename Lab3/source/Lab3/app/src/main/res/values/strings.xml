@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab3</string>
+
+    <!-- Facebook Api AppId,Scheme -->
+    <string name="facebook_app_id">157178584985461</string>
+    <string name="fb_login_protocol_scheme">fb157178584985461</string>
+    <!-- Watson Vision API Key -->
+    <string name="watson_api_key">6c1238ee9b590598c213c40a5fb69634ed7d87af</string>
+
+</resources>
