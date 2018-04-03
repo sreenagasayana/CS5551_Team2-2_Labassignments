@@ -1,0 +1,29 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "paypal",
+    "payment",
+    "gateway",
+    "nodejs",
+    "payment",
+    "integration",
+    "in",
+    "web",
+    "apps"
+  ],
+  "author": "Hari Manasa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.16.3",
+    "mongoose": "^4.13.12",
+    "paypal-rest-sdk": "^1.8.1",
+    "socket.io": "^2.1.0"
+  }
+}
