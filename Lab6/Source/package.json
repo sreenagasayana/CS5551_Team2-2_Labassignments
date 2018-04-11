@@ -1,0 +1,28 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "paypal",
+    "payment",
+    "gateway",
+    "nodejs",
+    "payment",
+    "integration",
+    "in",
+    "web",
+    "apps"
+  ],
+  "author": "Hari Manasa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.16.3",
+    "mongoose": "^4.13.12",
+    "paypal-rest-sdk": "^1.8.1",
+    "socket.io": "^2.1.0"
+  }
+}
